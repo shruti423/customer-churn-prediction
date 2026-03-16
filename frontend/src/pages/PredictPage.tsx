@@ -47,7 +47,7 @@ const PredictPage = () => {
   const handlePredict = async () => {
     try {
       // 1. Send the form data to our FastAPI backend
-      const response = await fetch("http://127.0.0.1:8000/api/predict/single", {
+      const response = await fetch("https://customer-churn-prediction-3qtx.onrender.com/api/predict/single", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
