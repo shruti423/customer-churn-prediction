@@ -3,8 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import io
 
-from backend.schemas import CustomerFeatures, PredictionResponse
-from backend.ml_service import model_service
+from schemas import CustomerFeatures, PredictionResponse
+from ml_service import model_service
 
 app = FastAPI(
     title="Customer Churn Intelligence API",
