@@ -49,7 +49,7 @@ const DashboardPage = () => {
       formData.append("file", file);
 
       // 2. Send to our new bulk prediction API
-      const response = await fetch("http://127.0.0.1:8000/api/predict/bulk", {
+      const response = await fetch("https://customer-churn-prediction-3qtx.onrender.com", {
         method: "POST",
         body: formData,
       });
